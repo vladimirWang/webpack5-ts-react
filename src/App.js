@@ -1,5 +1,7 @@
-function App() {
+import React from 'react';
+
+export default function App() {
   return (
-    <div>app</div>
+    <div>ap123p</div>
   )
 }

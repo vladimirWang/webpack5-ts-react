@@ -11,11 +11,19 @@ module.exports = {
       title: 'hello react'
     })
   ],
+  devServer: {
+    port: 8090
+  },
   module: {
     rules: [
       {
         test: /\.(png)$/,
         use: 'file-loader'
+      },
+      {
+        test: /\.js$/,
+        use: 'babel-loader',
+        exclude: /node_modules/
       }
     ]
   }
